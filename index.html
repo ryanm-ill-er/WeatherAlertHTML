@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Warning Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+       
+        <!-- Unified alert section for expiration and scrolling warnings -->
+        <div class="alert-container">
+            <div id="expiration" class="expiration-bar">Expires: TIME  </div> 
+            <div class="bottom-bar">
+                <div id="eventType" class="event-type-bar">EVENT TYPE</div>
+                <div id="counties" class="counties-bar">COUNTY NAMES</div>
+            </div>
+        </div>
+           <!-- Warning Counts positioned at the bottom -->
+           <div class="warning-counts">
+            <div id="tornadoCount" class="warning-count tornado-count">TORNADO WARNINGS: 0</div>
+            <div id="thunderstormCount" class="warning-count thunderstorm-count">SEVERE THUNDERSTORM WARNINGS: 0</div>
+            <div id="floodCount" class="warning-count flood-count">FLASH FLOOD WARNINGS: 0</div>
+            <div id="winterWeatherCount" class="warning-count winter-weather-count">WINTER WEATHER WARNINGS: 0</div>
+            <!-- Added winter weather count -->
+        </div>
+
+        <!-- Warning List Display Area -->
+        <div id="warningList" class="warning-list"></div>
+        
+      
+    <script src="script.js"></script>
+</body>
+</html>
